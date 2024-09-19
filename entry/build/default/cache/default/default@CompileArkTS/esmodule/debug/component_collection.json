@@ -1,0 +1,45 @@
+{
+  "entry\\src\\main\\ets\\entryability\\EntryAbility.ets": [
+    "If"
+  ],
+  "entry\\src\\main\\ets\\pages\\Index.ets": [
+    "Column",
+    "Image",
+    "Text",
+    "Row",
+    "Blank",
+    "AlertDialog",
+    "Tabs",
+    "TabContent",
+    "List",
+    "ForEach",
+    "ListItem",
+    "Divider",
+    "If"
+  ],
+  "entry\\src\\main\\ets\\pages\\Welcome.ets": [
+    "Column",
+    "Stack",
+    "Image",
+    "Text",
+    "If"
+  ],
+  "entry\\src\\main\\ets\\pages\\Friends.ets": [
+    "Column",
+    "Row",
+    "Image",
+    "Text",
+    "TextArea"
+  ],
+  "entry\\src\\main\\ets\\pages\\Settings.ets": [
+    "Row",
+    "Image",
+    "Text",
+    "Blank",
+    "Column",
+    "List",
+    "ForEach",
+    "ListItem",
+    "If"
+  ]
+}
