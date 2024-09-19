@@ -4,6 +4,7 @@
 作为个人自学的知识巩固，Demo 展示
 
 ## 主要有以下内容：
+#### --  模拟器的申请、创建以及使用
 #### --  基础容器组件的使用 （Column、Row、Stack）
 #### --  基础组件（Image、Text、Textarea、TextInput、List、Foreach、Divider、Blankdeng）
 #### --  对象的定义使用
