@@ -26,3 +26,16 @@
  
 #### -- 标准化数据
 #### -- 关系型数据
+
+##  app 截图
+![图片](https://github.com/user-attachments/assets/a291e660-e30c-4294-877f-e24fcbdfc7d7)
+
+
+![Screenshot_2024-09-23T160644](https://github.com/user-attachments/assets/4ddd8d35-b1e5-46d8-aaa2-21018a6ea41a)
+
+![Screenshot_2024-09-23T160718](https://github.com/user-attachments/assets/aa4de093-65ef-42be-9a0b-533e02a90b96)
+
+
+
+
+
