@@ -54,23 +54,24 @@ struct Index {
 
   discoverMenu:discoverMenuItem[] = [
     {name: '朋友圈', icon: null, status:true, 'url': 'pages/Friends'},
-    {name: '视频号', icon: null, status:true, 'url': null},
-    {name: '直播', icon: null, status:true, 'url': null},
+    {name: '视频号', icon: null, status:true, 'url': 'pages/Friends'},
+    {name: '直播', icon: null, status:true, 'url': 'pages/Friends'},
     {name: '扫一扫', icon: null, status:true, 'url': null},
     {name: '听一听', icon: null, status:true, 'url': null},
     {name: '看一看', icon: null, status:true, 'url': null},
     {name: '搜一搜', icon: null, status:true, 'url': null},
     {name: '购物', icon: null, status:true, 'url': null},
-    {name: '小程序', icon: null, status:true, 'url': null},
-    {name: '天气', icon: null, status:true, 'url': null},
+    {name: '小程序', icon: null, status:true, 'url': 'pages/Friends'},
+    {name: '天气', icon: null, status:true, 'url': 'pages/Weather'},
   ]
 
   userMenu:userMenuItem[] = [
-    {name: '服务', icon: null, isEndBlank:true, 'url': null},
-    {name: '收藏', icon: null, isEndBlank:false, 'url': null,},
-    {name: '朋友圈', icon: null, isEndBlank:false, 'url': null},
-    {name: '表情', icon: null, isEndBlank:true, 'url': null},
+    {name: '服务', icon: null, isEndBlank:true, 'url': 'pages/Settings'},
+    {name: '收藏', icon: null, isEndBlank:false, 'url': 'pages/Settings',},
+    {name: '朋友圈', icon: null, isEndBlank:false, 'url': 'pages/Settings'},
+    {name: '表情', icon: null, isEndBlank:true, 'url': 'pages/Settings'},
     {name: '设置', icon: null, isEndBlank:false, 'url': 'pages/Settings'},
+    {name: '软件初始化', icon: null, isEndBlank:false, 'url': 'pages/InitData'},
   ]
 
   @Builder

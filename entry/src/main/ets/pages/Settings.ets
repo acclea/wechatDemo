@@ -74,13 +74,59 @@ struct Setting {
       }
 
       Row(){
-        Text('切换账号')
+        Button('切换账号')
           .fontSize(20)
+          .onClick(() => {
+
+          })
       }
 
       Row(){
-        Text('退出')
+        Button('退出')
           .fontSize(20)
+          .onClick(() =>{
+            AlertDialog.show(
+              {
+                // title: 'title',
+                // subtitle: 'subtitle',
+                message: '确认退出登陆？',
+                autoCancel: true,
+                alignment: DialogAlignment.Bottom,
+                gridCount: 4,
+                offset: { dx: 0, dy: -20 },
+                primaryButton: {
+                  value: '取消',
+                  action: () => {
+                    // console.info('Callback when the first button is clicked')
+                    AlertDialog.show({message: '点击取消按钮',})
+                  }
+                },
+                secondaryButton: {
+                  enabled: true,
+                  defaultFocus: true,
+                  style: DialogButtonStyle.HIGHLIGHT,
+                  value: '确认',
+                  action: () => {
+                    // console.info('Callback when the second button is clicked')
+                    AlertDialog.show({message: '点击确认按钮',})
+                  }
+                },
+                cancel: () => {
+                  console.info('Closed callbacks')
+                },
+                onWillDismiss:(dismissDialogAction: DismissDialogAction)=> {
+                  console.info("reason=" + JSON.stringify(dismissDialogAction.reason))
+                  console.log("dialog onWillDismiss")
+                  if (dismissDialogAction.reason == DismissReason.PRESS_BACK) {
+                    dismissDialogAction.dismiss()
+                  }
+                  if (dismissDialogAction.reason == DismissReason.TOUCH_OUTSIDE) {
+                    dismissDialogAction.dismiss()
+                  }
+                }
+              }
+            )
+          }).backgroundColor(0x317aff)
       }
     }
     .height('100%')
